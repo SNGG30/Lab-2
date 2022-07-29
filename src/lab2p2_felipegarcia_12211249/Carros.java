@@ -23,6 +23,13 @@ public class Carros {
     
      public Carros(){
       }
+     public Carros(String MA, String MO, int A, String I, String E){
+         this.Marca = MA;
+         this.Modelo = MO;
+         this.Año = A;
+         this.Ingreso = I;
+         this.Estado = E;
+     }
     
     // Mutadores
     

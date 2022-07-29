@@ -23,6 +23,13 @@ public class Empleados {
        
     public Empleados(){
       }
+    public Empleados(String N, int E, String A, int S, String I){
+        this.Nombre = N;
+        this.Edad = E;
+        this.Activo = A;
+        this.Sueldo = S;
+        this.Identidad = I;
+    }
     
     // Mutadores
     
@@ -63,4 +70,18 @@ public class Empleados {
     
     
     // Metodos de administracion
+    
+    public String SwitchAct(int act, String A){
+        
+        if (act == 0) {
+            A = "El empleado esta activo";
+        }else{
+            A = "El empleado esta inactivo";
+        }
+        return A;
+    }
+    
+    public String toString(){
+        return "Nombre: " + Nombre + " | Edad: " + Edad + " | Actividad: " + Activo + " | Se le paga: " + Sueldo + " | Identidad RRHH: " + Identidad;
+    }
 }

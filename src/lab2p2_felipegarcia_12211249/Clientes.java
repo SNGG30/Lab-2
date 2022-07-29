@@ -22,6 +22,12 @@ public class Clientes {
     
     public Clientes(){
     }
+    public Clientes(String N, int E, String I, int P){
+        this.Nombre = N;
+        this.Edad = E;
+        this.Identidad = I;
+        this.Pago = P;
+    }
     
     // Mutadores
     
@@ -54,4 +60,7 @@ public class Clientes {
     }
     // Metodos de administracion
     
+    public String toString(){
+        return "Nombre: " + Nombre + " | Edad: " + Edad + " | Identidad: " + Identidad + " | El cliente debe: L." + Pago;
+    }
 }

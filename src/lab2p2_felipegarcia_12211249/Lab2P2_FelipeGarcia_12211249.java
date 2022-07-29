@@ -5,6 +5,7 @@
  */
 package lab2p2_felipegarcia_12211249;
 import java.util.Scanner;
+import java.util.ArrayList;
 /**
  *
  * @author felip
@@ -21,6 +22,9 @@ public class Lab2P2_FelipeGarcia_12211249 {
         String contra;
         boolean centinela = true;
         boolean centinela2 = true;
+        ArrayList Clientes = new ArrayList();
+        ArrayList Empleados = new ArrayList();
+        ArrayList Carros = new ArrayList();
         
         while(centinela == true){
         System.out.println("INICIO DE SESION");

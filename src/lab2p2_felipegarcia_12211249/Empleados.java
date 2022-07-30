@@ -70,17 +70,7 @@ public class Empleados {
     
     
     // Metodos de administracion
-    
-    public String SwitchAct(int act, String A){
-        
-        if (act == 0) {
-            A = "El empleado esta activo";
-        }else{
-            A = "El empleado esta inactivo";
-        }
-        return A;
-    }
-    
+ 
     public String toString(){
         return "Nombre: " + Nombre + " | Edad: " + Edad + " | Actividad: " + Activo + " | Se le paga: " + Sueldo + " | Identidad RRHH: " + Identidad;
     }

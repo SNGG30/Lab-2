@@ -15,7 +15,7 @@ public class Carros {
     
     private String Marca;
     private String Modelo;
-    private int Año;
+    private String Año;
     private String Ingreso;
     private String Estado;
     private String Owner;
@@ -23,12 +23,13 @@ public class Carros {
     
      public Carros(){
       }
-     public Carros(String MA, String MO, int A, String I, String E){
+     public Carros(String MA, String MO, String A, String I, String E, String O){
          this.Marca = MA;
          this.Modelo = MO;
          this.Año = A;
          this.Ingreso = I;
          this.Estado = E;
+         this.Owner = O;
      }
     
     // Mutadores
@@ -47,10 +48,10 @@ public class Carros {
          this.Modelo = MO;
      }
      
-     public int getAño(){
+     public String getAño(){
          return Año;
      }
-     public void setAño(int A){
+     public void setAño(String A){
          this.Año = A;
      }
      
@@ -70,5 +71,7 @@ public class Carros {
      
      
     // Metodos de administracion
-    
+    public String toString(){
+        return "Marca: " + Marca + " | Modelo: " + Modelo + " | Fecha de elaboracion: " + Año+ " | Fecha de ingreso al taller: " + Ingreso + " | Estado en el taller: " + Estado + " | Dueño: " + Owner;
+    }
 }
